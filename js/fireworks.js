@@ -103,7 +103,7 @@ Firework.prototype.update = function( index ) {
 	// how far will the firework have traveled with velocities applied?
 	this.distanceTraveled = calculateDistance( this.sx, this.sy, this.x + vx, this.y + vy );
 
-	// if the distance traveled, including velocities, is greater than the initial distance to the target, then the target has been reached
+	// if the distance traveled, including velocities, is greater than the initial distance to the target, then the target has been reached                                                                        Jin Ge, you've lived for
 	if( this.distanceTraveled >= this.distanceToTarget ) {
 		createParticles( this.tx, this.ty );
 		// remove the firework, use the index passed into the update function to determine which to remove
